@@ -9,16 +9,16 @@ import {FacebookService} from './facebook/facebook.service';
 })
 export class AppComponent implements OnInit{
 
-  constructor(
-	  	private _facebookService: FacebookService
-	){}
+  	constructor(
+		private _facebookService: FacebookService
+  	){}
 
 	ngOnInit(){
-    	this._facebookService.loadAndInitFBSDK();
+    		this._facebookService.loadAndInitFBSDK();
 	}
 
 	login(){
-	    FB.login(function(response) {
+		FB.login(function(response) {
 		    if (response.authResponse) {
 		     console.log('Welcome!  Fetching your information.... ');
 		     FB.api('/me', function(response) {
