@@ -7,11 +7,11 @@ Exemple here: http://www.nicolas2bert.com/chat
 
 ### Instalation
 
-###### 0) Build and run a super-simple Angular 2 application in TypeScript. https://angular.io/docs/ts/latest/quickstart.html
+0) Build and run a super-simple Angular 2 application in TypeScript. https://angular.io/docs/ts/latest/quickstart.html
 
-##### 1) Download the angular2-facebook-connect package: download using the zip file 
+1) Download the angular2-facebook-connect package: download using the zip file 
 
-##### 2) Add angular2-facebook-connect.js in your app & Change the api_key inside /facebook.service.ts
+2) Add angular2-facebook-connect.js in your app & Change the api_key inside /facebook.service.ts
 
 ```
   FB.init({
@@ -23,4 +23,4 @@ Exemple here: http://www.nicolas2bert.com/chat
 ```
 
 
-##### 3) Enjoy your login Facebook
+3) Enjoy your login Facebook
