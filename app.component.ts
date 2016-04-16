@@ -5,7 +5,6 @@ import {FacebookService} from './facebook/facebook.service';
 @Component({
     selector: 'my-app',
     templateUrl: 'app/facebook.component.html',
-    styleUrls:  ['app/facebook.component.css'],
     providers: [FacebookService]
 })
 export class AppComponent implements OnInit{
