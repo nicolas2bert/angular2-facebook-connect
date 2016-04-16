@@ -1,6 +1,6 @@
 
 import {Component, OnInit} from 'angular2/core';
-import {FacebookService} from './facebook/facebook.service';
+import {FacebookService} from './facebook.service';
 
 @Component({
     selector: 'my-app',
