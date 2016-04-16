@@ -11,7 +11,7 @@ Exemple here: http://www.nicolas2bert.com/chat
 
 1) Download the angular2-facebook-connect package: download using the zip file 
 
-2) Add angular2-facebook-connect.js in your app & Change the api_key inside /facebook.service.ts
+2) Add angular2-facebook-connect.js in your app & Change the appId inside /facebook.service.ts
 
 ```
   FB.init({
