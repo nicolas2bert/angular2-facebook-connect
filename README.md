@@ -7,7 +7,7 @@ Exemple here: http://www.nicolas2bert.com/chat
 
 ### Instalation
 
-##### 0) Build and run a super-simple Angular 2 application in TypeScript. https://angular.io/docs/ts/latest/quickstart.html
+###### 0) Build and run a super-simple Angular 2 application in TypeScript. https://angular.io/docs/ts/latest/quickstart.html
 
 ##### 1) Download the angular2-facebook-connect package: download using the zip file 
 
