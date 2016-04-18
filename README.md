@@ -15,7 +15,7 @@ Exemple here: http://www.nicolas2bert.com/chat
 
 - Add app.component.html, app.component.ts and facebook.service.ts in your app 
 
-- Change the appId inside /facebook.service.ts
+- Replace your-app-id with your facebook app id inside /facebook.service.ts
 
 ```
   FB.init({
