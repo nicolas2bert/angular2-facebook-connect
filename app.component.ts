@@ -7,7 +7,8 @@ import {FacebookService} from './facebook.service';
     providers: [FacebookService]
 })
 export class AppComponent implements OnInit{
-
+	name=""
+	isUser = false
   	constructor(
   		private _ngZone: NgZone
 		private _facebookService: FacebookService
