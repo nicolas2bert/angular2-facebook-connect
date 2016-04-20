@@ -1,5 +1,4 @@
-
-import {Component, OnInit} from 'angular2/core';
+import { Component, OnInit, NgZone} from 'angular2/core';
 import {FacebookService} from './facebook.service';
 
 @Component({
@@ -10,6 +9,7 @@ import {FacebookService} from './facebook.service';
 export class AppComponent implements OnInit{
 
   	constructor(
+  		private _ngZone: NgZone
 		private _facebookService: FacebookService
   	){}
 
@@ -18,14 +18,17 @@ export class AppComponent implements OnInit{
 	}
 
 	login(){
+		var self = this;
 		FB.login(function(response) {
 		    if (response.authResponse) {
-		     console.log('Welcome!  Fetching your information.... ');
-		     FB.api('/me', function(response) {
-		       console.log('Good to see you, ' + response.name + '.');
-		     });
-		    } else {
-		     console.log('User cancelled login or did not fully authorize.');
+		        FB.api('/me', function(response) {
+		          	self._ngZone.run(() => {
+				        self.name = response.name;
+				        self.isUser = true
+			        });
+		        });
+		    }else{
+		        console.log('User cancelled login or did not fully authorize.');
 		    }
 		});
 	}
