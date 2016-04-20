@@ -1,1 +1,6 @@
-<button (click)="login()" class="btn btn-info"> Log In Facebook </button>
+<div *ngIf="!isUser">
+  <button (click)="login()" class="btn btn-info"> Log In Facebook </button>
+<div>
+<div *ngIf="isUser">
+  <h2> Welcome {{name}} </h2>
+<div>
